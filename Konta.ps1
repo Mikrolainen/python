@@ -5,9 +5,8 @@
 #13.12.2022
 
 cls
-
-while($loop -eq 1){
 $loop = 1
+while($loop -eq 1){
 
 $kysimus = (Read-Host = "mis on CSV faili nimi?: ")               #kusib kasutajalt mis on faili nimi kust see votab emailid
                    
