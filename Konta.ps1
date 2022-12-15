@@ -8,11 +8,12 @@
 
 #13.12.2022
 
-
-
-
 cls
-$kysimus = (Read-Host = "mis on CSV faili nimi?: ")                                            #kusib kasutajalt mis on faili nimi kust see votab emailid
+$loop = 1
+while($loop = 1){
+$kysimus = (Read-Host = "mis on CSV faili nimi?: ")                                                             #kusib kasutajalt mis on faili nimi kust see votab emailid
+if ($kysimus -notmatch ".csv$") {
+       write-host "file pole .csv fail!"
 
 $skriptiAsukoht = $MyInvocation.MyCommand.Path
 $dir = Split-Path $skriptiAsukoht
@@ -37,5 +38,5 @@ If (Test-Path -Path $kysimus) {                                                 
 
 
     }
-
+}
 
