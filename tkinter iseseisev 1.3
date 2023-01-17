@@ -1,0 +1,26 @@
+from tkinter import *
+
+aken = Tk()
+aken.title("Pilved")
+aken.configure()
+aken.geometry("450x200")
+aken.resizable(0,0)
+
+
+tekst = Label(aken, text="mis on pilvede kõrgus? (Km)")
+tekst.grid(row=0, column=1)
+sisestus = Entry(aken)
+sisestus.grid(row=1,column=1)
+
+if sisestus > 6.0:
+    print(sisestus)
+
+
+
+
+
+
+
+
+
+aken.mainloop()
