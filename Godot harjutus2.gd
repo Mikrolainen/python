@@ -15,11 +15,18 @@ func _ready():
 		print("sa saad osta seda toodet!")
 	else:
 		print("sul pole piisavalt raha!")
-	print("-------------------------------------------")
+	print("-----------------------------------------")
 	rand.randomize()
-	var no = rand.randi_range(3,10)
+	var no = rand.randi_range(1,10)
 	prand.randomize()
-	var yes = prand.randi_range(3,10)
-	print("kulg1: ",yes,"kulg2: ",no)
+	var yes = prand.randi_range(1,10)
+	print("kulg1: ",yes," kulg2: ",no)
+	if no == yes:
+		print("see on ruut")
+		print("ruudu pindala on: ",no*yes)
+	else: 
+		print("see on ristkulik")
+		print("ristkuliku pindala on: ",no*yes)
+	print("-------------------------------------------")
 	
 	
