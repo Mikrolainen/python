@@ -1,38 +1,33 @@
 from tkinter import *
 
-aken = Tk()
+def prindi():                   #kui vajutada ok nup siis laseb ta selle toola
+    
+    if sisestus.get() >= str(6):                              #motleb kas see arv on suurem kui 6
+        print("need on korged pilved")                    #prindib selle kui number on suurem kui 6
+    else:
+        print("need ei ole ulemised pilved")                         #prindib selle kui number on vaiksem kui 6
+
+aken = Tk()                                                       #akna konfiguratsioon
 aken.title("Pilved")
 aken.configure()
 aken.geometry("450x200")
 aken.resizable(0,0)
 
-
-tekst = Label(aken, text="mis on pilvede kõrgus? (Km)")
-tekst.grid(row=0, column=1)
-sisestus = Entry(aken)
+sisestus = Entry(aken)                                             #esitab esitus akna kuhu saab kirjutada
 sisestus.grid(row=1,column=1)
 
-def prindi():
-    print(sisestus.get())
-    
-    if sisestus >= 6.0:
-        print(need on korged pilved)
-    else:
-        print(need ei ole ulemised pilved)
+tekst = Label(aken, text="sisesta pilvede korgus kilomeetrites: ")                      #kusib sult et sisestada arvu sinna kirjutamis valja
+tekst.grid(row=0, column=1)
 
-
-
-nupp1 = Button(aken, text="OK", width=7, height=1,command=prindi)
+nupp1 = Button(aken, text="OK", width=7, height=1,command=prindi)                 #ok nupp et def prindi line 3s toole panna
 nupp1.grid(row=5, column=2)
 
 
-
-aken.mainloop()
-
-
+    
+    
 
 
-
+aken.mainloop()                    #jah
 
 
 
