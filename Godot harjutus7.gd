@@ -1,0 +1,23 @@
+extends Node
+
+func _ready():
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print(".")
+	print("pede")
